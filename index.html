@@ -3,53 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GenZ Fashion</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <title>Penguin Fashion</title>
 
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+        href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+        crossorigin="anonymous" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header -->
   <header>
+    <!-- Navbar -->
     <nav class="navbar">
-      <!-- Logo -->
-      <div class="logo bebas">
-        <a href="#">GenZ Fashion</a>
-      </div>
+      <a class="logo" href="#">
+        <img src="/icons/logo.png" alt="Penguin Fashion Logo">
+      </a>
 
       <!-- Nav Links -->
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Shop</a></li>
-        <li><a href="#">Collections</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Disabled</a></li>
       </ul>
 
-      <!-- Actions -->
-      <div class="nav-actions">
-        <a href="#" class="login">Login</a>
-        <a href="#" class="btn-primary">Sign Up</a>
-      </div>
-
-      <!-- Mobile Toggle -->
-      <div class="menu-toggle" id="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+      <!-- Mobile Menu Toggle -->
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
     </nav>
-  </header>
 
-  <script>
-    // Small JS for mobile toggle
-    const toggle = document.getElementById('menu-toggle');
-    const navLinks = document.querySelector('.nav-links');
-    
-    toggle.addEventListener('click', () => {
-      navLinks.classList.toggle('active');
-    });
-  </script>
+    <!-- Banner -->
+    <section class="banner">
+      <div class="banner-text">
+        <h1>
+          <span id="genz-text">BE THE GENZS</span><br>
+          <span id="winter-text">OF WINTER</span>
+        </h1>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        </p>
+        <button class="btn" aria-label="Buy Now">
+          <i class="fas fa-shopping-cart"></i> Buy Now
+        </button>
+      </div>
+
+      <div class="banner-img">
+        <img src="/images/model.png" alt="Winter Fashion Model">
+      </div>
+    </section>
+  </header>
 </body>
 </html>
