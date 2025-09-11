@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Penguin Fashion</title>
+  <title>GenZ Fashion</title>
 
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Font Awesome -->
+  <!-- Font Awesome (:contentReference[oaicite:0]{index=0}) -->
   <link rel="stylesheet"
         href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
@@ -21,28 +21,29 @@
 <body>
   <!-- Header -->
   <header>
-    <!-- Navbar -->
-    <nav class="navbar">
-      <a class="logo" href="#">
-        <img src="/icons/logo.png" alt="Penguin Fashion Logo">
-      </a>
+    <div class="container">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <!-- Brand group -->
+        <div class="brand">
+          <a class="logo" href="#">
+            <img src="/icons/logo_icon.png" alt="GenZ Fashion Logo">
+          </a>
+          <h1 class="brand-name"><span>GenZ</span> Fashion</h1>
+        </div>
 
-      <!-- Nav Links -->
-      <ul class="nav-links">
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">Features</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Disabled</a></li>
-      </ul>
-
-      <!-- Mobile Menu Toggle -->
-      <button class="menu-toggle" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </button>
-    </nav>
+        <!-- Nav Links -->
+        <ul class="nav-links">
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
 
     <!-- Banner -->
-    <section class="banner">
+    <section class="banner container">
       <div class="banner-text">
         <h1>
           <span id="genz-text">BE THE GENZS</span><br>
@@ -61,5 +62,68 @@
       </div>
     </section>
   </header>
+
+  <!-- Main -->
+  <main>
+    <!-- Product Section -->
+    <div class="woman-jacket section container">
+      <div class="section-title">
+        <h1>Women Jacket</h1>
+      </div>
+
+      <div class="wrapper-jacket">
+        <!-- Card 1 -->
+        <div class="jacket-box">
+          <div class="jacket-img">
+            <img src="./images/jacket-1.png" alt="Yellow Coat Jacket" />
+          </div>
+          <div class="jacket-text">
+            <h2>Yellow Coat Jacket</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+          <div class="footer-card">
+            <span>$234</span>
+            <button class="btn">
+              <i class="fas fa-shopping-cart"></i> Buy Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="jacket-box">
+          <div class="jacket-img">
+            <img src="./images/jacket-2.png" alt="Ladies Jacket" />
+          </div>
+          <div class="jacket-text">
+            <h2>Ladies Jacket</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+          <div class="footer-card">
+            <span>$234</span>
+            <button class="btn">
+              <i class="fas fa-shopping-cart"></i> Buy Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="jacket-box">
+          <div class="jacket-img">
+            <img src="./images/jacket-3.png" alt="Woman Leather Jacket" />
+          </div>
+          <div class="jacket-text">
+            <h2>Woman Leather Jacket</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+          <div class="footer-card">
+            <span>$234</span>
+            <button class="btn">
+              <i class="fas fa-shopping-cart"></i> Buy Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
