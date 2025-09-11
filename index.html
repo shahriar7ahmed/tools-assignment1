@@ -8,7 +8,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css">
 
-  <!-- Font Awesome (:contentReference[oaicite:0]{index=0}) -->
+  <!-- Font Awesome -->
   <link rel="stylesheet"
         href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
@@ -24,10 +24,10 @@
     <div class="container">
       <!-- Navbar -->
       <nav class="navbar">
-        <!-- Brand group -->
+        <!-- Brand -->
         <div class="brand">
           <a class="logo" href="#">
-            <img src="/icons/logo_icon.png" alt="GenZ Fashion Logo">
+            <img src="./icons/logo_icon.png" alt="GenZ Fashion Logo">
           </a>
           <h1 class="brand-name"><span>GenZ</span> Fashion</h1>
         </div>
@@ -39,6 +39,11 @@
           <li><a href="#">About Us</a></li>
           <li><a href="#">Contact Us</a></li>
         </ul>
+
+        <!-- Mobile Menu Icon -->
+        <div class="menu-icon">
+          <i class="fas fa-bars"></i>
+        </div>
       </nav>
     </div>
 
@@ -58,17 +63,17 @@
       </div>
 
       <div class="banner-img">
-        <img src="/images/model.png" alt="Winter Fashion Model">
+        <img src="./images/model.png" alt="Winter Fashion Model">
       </div>
     </section>
   </header>
 
   <!-- Main -->
   <main>
-    <!-- Product Section -->
+    <!-- Women Jackets -->
     <div class="woman-jacket section container">
       <div class="section-title">
-        <h1>Women Jacket</h1>
+        <h1 class="category-title">Women Jackets</h1>
       </div>
 
       <div class="wrapper-jacket">
@@ -83,9 +88,7 @@
           </div>
           <div class="footer-card">
             <span>$234</span>
-            <button class="btn">
-              <i class="fas fa-shopping-cart"></i> Buy Now
-            </button>
+            <button class="btn"><i class="fas fa-shopping-cart"></i> Buy Now</button>
           </div>
         </div>
 
@@ -100,9 +103,7 @@
           </div>
           <div class="footer-card">
             <span>$234</span>
-            <button class="btn">
-              <i class="fas fa-shopping-cart"></i> Buy Now
-            </button>
+            <button class="btn"><i class="fas fa-shopping-cart"></i> Buy Now</button>
           </div>
         </div>
 
@@ -117,13 +118,75 @@
           </div>
           <div class="footer-card">
             <span>$234</span>
-            <button class="btn">
-              <i class="fas fa-shopping-cart"></i> Buy Now
-            </button>
+            <button class="btn"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Men Jackets -->
+    <div class="man-jacket section container">
+      <div class="section-title">
+        <h1 class="category-title">Men Jackets</h1>
+      </div>
+
+      <div class="wrapper-jacket">
+        <!-- Card 1 -->
+        <div class="jacket-box">
+          <div class="jacket-img">
+            <img src="./images/jacket-4.png" alt="Men Yellow Coat" />
+          </div>
+          <div class="jacket-text">
+            <h2>Yellow Coat Jacket</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+          <div class="footer-card">
+            <span>$234</span>
+            <button class="btn"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="jacket-box">
+          <div class="jacket-img">
+            <img src="./images/jacket-5.png" alt="Men Jacket 2" />
+          </div>
+          <div class="jacket-text">
+            <h2>Men Casual Jacket</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+          <div class="footer-card">
+            <span>$234</span>
+            <button class="btn"><i class="fas fa-shopping-cart"></i> Buy Now</button>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="jacket-box">
+          <div class="jacket-img">
+            <img src="./images/jacket-6.png" alt="Men Leather Jacket" />
+          </div>
+          <div class="jacket-text">
+            <h2>Men Leather Jacket</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+          <div class="footer-card">
+            <span>$234</span>
+            <button class="btn"><i class="fas fa-shopping-cart"></i> Buy Now</button>
           </div>
         </div>
       </div>
     </div>
   </main>
+
+  <!-- Optional: JS for Mobile Menu -->
+  <script>
+    const menuIcon = document.querySelector('.menu-icon i');
+    const navLinks = document.querySelector('.nav-links');
+
+    menuIcon.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
 </body>
 </html>

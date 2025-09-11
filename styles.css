@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -26,8 +26,8 @@ body {
   padding: 15px 0;
   width: 100%;
   height: 70px;
-  background: #FFFBF0;
-  border-bottom: 1px solid #FFFBF0;
+  background: #fffbf0;
+  border-bottom: 1px solid #fffbf0;
   position: relative;
 }
 
@@ -44,14 +44,14 @@ body {
 }
 
 .brand-name {
-  font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
   font-size: 24px;
-  color: #3C3C3C;
+  color: #3c3c3c;
 }
 
 .brand-name span {
-  color: #A4BC46;
-  font-family: 'Roboto', sans-serif;
+  color: #a4bc46;
+  font-family: "Roboto", sans-serif;
   font-size: 25px;
 }
 
@@ -64,18 +64,17 @@ body {
 
 .nav-links a {
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  color: #3C3C3C;
-  line-height: 26px;
+  color: #3c3c3c;
   position: relative;
   transition: color 0.3s ease;
 }
 
 .nav-links a.active,
 .nav-links a:hover {
-  color: #85A019;
+  color: #85a019;
 }
 
 .nav-links a::after {
@@ -83,7 +82,7 @@ body {
   position: absolute;
   width: 0;
   height: 2px;
-  background: #85A019;
+  background: #85a019;
   left: 0;
   bottom: -5px;
   transition: width 0.3s ease;
@@ -93,6 +92,17 @@ body {
   width: 100%;
 }
 
+/* Mobile Menu Icon */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+}
+
+.menu-icon i {
+  font-size: 28px;
+  color: #3c3c3c;
+}
+
 /* ---------------- Banner ---------------- */
 .banner {
   display: flex;
@@ -100,7 +110,7 @@ body {
   justify-content: space-between;
   padding: 60px 0;
   flex-wrap: wrap;
-  background: #FFFBF0;
+  background: #fffbf0;
 }
 
 .banner-text {
@@ -115,11 +125,11 @@ body {
 
 .banner-text p {
   margin-bottom: 20px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
-  color: #3E3E3E;
+  color: #3e3e3e;
 }
 
 .banner-img {
@@ -140,21 +150,18 @@ body {
   line-height: 1.1;
 }
 
-#genz-text { color: #FABE4C; }
-#winter-text { color: #363958; }
-
-@media (max-width: 768px) {
-  #genz-text,
-  #winter-text {
-    font-size: 50px;
-  }
+#genz-text {
+  color: #fabe4c;
+}
+#winter-text {
+  color: #363958;
 }
 
 /* ---------------- Buttons ---------------- */
 .btn {
   display: inline-block;
   padding: 12px 25px;
-  background: #A4BC46;
+  background: #a4bc46;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -165,7 +172,7 @@ body {
 }
 
 .btn:hover {
-  background: #85A019;
+  background: #85a019;
   transform: translateY(-2px);
 }
 
@@ -176,16 +183,20 @@ body {
 
 .section-title {
   margin-bottom: 30px;
+  color: #363958;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.category-title {
+  color: #363958;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 48px;
 }
 
 .wrapper-jacket {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
-
 }
 
 .jacket-box {
@@ -196,9 +207,9 @@ body {
 
 .jacket-img {
   background: #f1f1f1;
-  align-items: center;
   display: flex;
   justify-content: center;
+  align-items: center;
   border-radius: 20px;
   padding: 20px;
 }
@@ -222,8 +233,8 @@ body {
 
 .footer-card {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
 }
 
 .footer-card span {
@@ -232,6 +243,53 @@ body {
   font-weight: 600;
 }
 
-.footer-card button.btn {
-  margin-top: 5px;
+/* ---------------- Responsive ---------------- */
+@media (max-width: 768px) {
+  .banner {
+    flex-direction: column;
+    padding: 30px 0;
+  }
+  .banner-text, .banner-img {
+    flex: unset;
+    width: 100%;
+    text-align: center;
+  }
+  .banner-text h1 {
+    font-size: 40px;
+  }
+  .banner-img img {
+    max-width: 80%;
+    margin-top: 20px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background: #fffbf0;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+
+  .category-title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper-jacket {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .banner-text p {
+    font-size: 14px;
+  }
+  .btn {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
 }
