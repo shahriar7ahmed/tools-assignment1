@@ -12,7 +12,6 @@
   <link
     rel="stylesheet"
     href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
     crossorigin="anonymous"
   />
 
@@ -22,7 +21,6 @@
     rel="stylesheet"
   />
 </head>
-
 <body>
   <!-- Header -->
   <header>
@@ -43,7 +41,6 @@
           <li><a href="#">Contact</a></li>
         </ul>
 
-        <!-- ✅ Hamburger icon works now -->
         <div class="menu-icon">
           <i class="fas fa-bars"></i>
         </div>
@@ -74,12 +71,10 @@
   <!-- Main -->
   <main>
     <!-- Women Jackets -->
-    <section class="woman-jacket section container">
-      <div class="section-title">
-        <h1 class="category-title">Women Jackets</h1>
-      </div>
-
+    <section class="section container">
+      <h1 class="category-title">Women Jackets</h1>
       <div class="wrapper-jacket">
+        <!-- Jacket 1 -->
         <div class="jacket-box">
           <div class="jacket-img">
             <img src="./images/jacket-1.png" alt="Yellow Coat Jacket" />
@@ -93,7 +88,7 @@
             <button class="btn"><i class="fas fa-shopping-cart"></i> Buy Now</button>
           </div>
         </div>
-
+        <!-- Jacket 2 -->
         <div class="jacket-box">
           <div class="jacket-img">
             <img src="./images/jacket-2.png" alt="Ladies Jacket" />
@@ -107,7 +102,7 @@
             <button class="btn"><i class="fas fa-shopping-cart"></i> Buy Now</button>
           </div>
         </div>
-
+        <!-- Jacket 3 -->
         <div class="jacket-box">
           <div class="jacket-img">
             <img src="./images/jacket-3.png" alt="Woman Leather Jacket" />
@@ -125,12 +120,10 @@
     </section>
 
     <!-- Men Jackets -->
-    <section class="man-jacket section container">
-      <div class="section-title">
-        <h1 class="category-title">Men Jackets</h1>
-      </div>
-
+    <section class="section container">
+      <h1 class="category-title">Men Jackets</h1>
       <div class="wrapper-jacket">
+        <!-- Jacket 1 -->
         <div class="jacket-box">
           <div class="jacket-img">
             <img src="./images/jacket-4.png" alt="Men Yellow Coat" />
@@ -144,7 +137,7 @@
             <button class="btn"><i class="fas fa-shopping-cart"></i> Buy Now</button>
           </div>
         </div>
-
+        <!-- Jacket 2 -->
         <div class="jacket-box">
           <div class="jacket-img">
             <img src="./images/jacket-5.png" alt="Men Casual Jacket" />
@@ -158,7 +151,7 @@
             <button class="btn"><i class="fas fa-shopping-cart"></i> Buy Now</button>
           </div>
         </div>
-
+        <!-- Jacket 3 -->
         <div class="jacket-box">
           <div class="jacket-img">
             <img src="./images/jacket-6.png" alt="Men Leather Jacket" />
@@ -176,7 +169,7 @@
     </section>
 
     <!-- Footer Service Section -->
-    <section class="footer-service-section section container">
+    <section class="section container">
       <div class="footer-wrapper">
         <div class="footer-left-section">
           <div class="footer-text-box">
@@ -186,7 +179,6 @@
               <p>We offer styles for every body type, ensuring comfort and confidence.</p>
             </div>
           </div>
-
           <div class="footer-text-box">
             <img src="./icons/box.png" alt="Free Exchanges" />
             <div class="text-box">
@@ -194,7 +186,6 @@
               <p>Easy exchanges to make sure you always get the right style and size.</p>
             </div>
           </div>
-
           <div class="footer-text-box">
             <img src="./icons/question.png" alt="Contact Seller" />
             <div class="text-box">
@@ -215,7 +206,6 @@
   <script>
     const menuIcon = document.querySelector(".menu-icon i");
     const navLinks = document.querySelector(".nav-links");
-
     menuIcon.addEventListener("click", () => {
       navLinks.classList.toggle("show");
     });
