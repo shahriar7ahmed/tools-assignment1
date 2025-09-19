@@ -65,7 +65,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   color: #3c3c3c;
-  position: relative;
+  position: relative; 
   transition: color 0.3s ease;
 }
 
@@ -231,10 +231,10 @@ body {
 /* ---------------- Footer ---------------- */
 .footer-wrapper {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: center; 
+  justify-content: space-between;
   gap: 50px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .footer-left-section {
